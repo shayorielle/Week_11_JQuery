@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ui">
+        <div class="row">
+            <img src="./x.svg" id="xTurn" class="img-fluid" alt="Responsive image">
+            <img src="./o.svg" id="oTurn" class="img-fluid" alt="Responsive image">
+        </div>
+     
+        <div class="row">
+            <div class="form-group">
+                <label for="player">Who will go first?</label>
+                <select class="form-control" id="player" onclick="gameSet()">
+                    <option></option>
+                    <option>X's</option>
+                    <option>O's</option>
+                </select>
+            </div> 
+            <p id="turnStatus" style="display: none;"></p>
+            <h4 id="status" style="display: block;"></h1>
+        </div>
+            
+       
+<div id="board">
+        <div class="row">
+            <span id="a1Mark"><input type="text" class="cell" id="a1" onclick="takeTurnA1()"></span>
+            <span id="a2Mark"><input type="text" class="cell" id="a2" onclick="takeTurnA2()"></span>
+            <span id="a3Mark"><input type="text" class="cell" id="a3" onclick="takeTurnA3()"></span>
+        </div>
+        <div class="row">
+            <span id="b1Mark"><input type="text" class="cell" id="b1" onclick="takeTurnB1()"></span>
+            <span id="b2Mark"><input type="text" class="cell" id="b2" onclick="takeTurnB2()"></span>
+            <span id="b3Mark"><input type="text" class="cell" id="b3" onclick="takeTurnB3()"></span>
+        </div>
+        <div class="row">
+            <span id="c1Mark"><input type="text" class="cell" id="c1" onclick="takeTurnC1()"></span>
+            <span id="c2Mark"><input type="text" class="cell" id="c2" onclick="takeTurnC2()"></span>
+            <span id="c3Mark"><input type="text" class="cell" id="c3" onclick="takeTurnC3()"></span>
+        </div>
+    </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
